@@ -9,6 +9,7 @@ const Write = () => {
   return (
     <div>
       여기는 작성페이지
+      git branch에 올라가나요?
     </div>
   )
 }
