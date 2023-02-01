@@ -1,0 +1,132 @@
+.header_wrap{
+    width: 100%;
+    height: 64px;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    /* background-color: rgb(220, 236, 236); */
+}
+
+.header_logo{
+    width: 71px;
+    height: 100%;
+    padding-top: 18px;
+    box-sizing: border-box;
+    /* background-color: rgb(218, 255, 255); */
+}
+
+.header_right {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    /* background-color: rgb(144, 201, 201); */
+}
+
+.night_mode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 0.25rem;
+    color: white;
+    position: relative;
+}
+
+.night_mode:hover {
+    background-color: #ebebeb;
+}
+
+.night_mode_div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.night_mode_rotate {
+    transform: scale(1) rotate(116deg);
+    opacity: 1;
+}
+
+.night_mode_icon{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.search {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    outline: none;
+    border-radius: 50%;
+    color: var(--text1);
+    cursor: pointer;
+    margin-right: 0.5rem;
+}
+
+.search:hover {
+    background-color: #ebebeb;
+}
+
+.write_btn {
+    height: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 1.25rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    outline: none;
+    font-weight: bold;
+    word-break: keep-all;
+    background: #F8F9FA;
+    border: 1px solid #343A40;
+    color: #343A40;
+    transition: all 0.125s ease-in 0s;
+    cursor: pointer;
+}
+
+.write_btn:hover {
+    background-color: #343A40;
+    color: #F8F9FA;
+}
+
+.profile {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.profile_img {
+    display: block;
+    height: 2.5rem;
+    width: 2.5rem;
+    box-shadow: rgb(0 0 0 / 9%) 0px 0px 8px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: all 0.125s ease-in 0s;
+}
+
+.profile_svg {
+    font-size: 1.5rem;
+    margin-left: 0.5rem;
+    transition: all 0.125s ease-in 0s;
+    margin-right: -0.4375rem;
+    fill: aqua;
+}
+
+.profile_svg:hover {
+    background-color: #343A40;
+}
