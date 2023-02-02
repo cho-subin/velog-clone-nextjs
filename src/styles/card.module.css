@@ -1,0 +1,138 @@
+.card {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    width: 19.2rem;
+    background: #ffff;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 4%) 0px 4px 16px 0px;
+    transition: box-shadow 0.25s ease-in 0s, transform 0.25s ease-in 0s;
+    margin: 1rem;
+    margin-top: none;
+    overflow: hidden;
+}
+
+.card:hover{
+    box-shadow: rgb(0 0 0 / 4%) 0px 12px 23px 0px;
+}
+
+.card a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card_img {
+    width: 100%;
+    position: relative;
+    padding-top: 52.1921%;
+    box-sizing: border-box;
+}
+
+.card_img img {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card_text_wrap {
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex: 1 1 0%;
+    flex-direction: column;
+}
+
+.card_text_wrap a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+.card_text_wrap a h4 {
+    font-size: 1rem;
+    margin: 0px 0px 0.25rem;
+    line-height: 1.5;
+    word-break: break-word;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #212529;
+}
+
+.card_text p {
+    margin: 0px 0px 1.5rem;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    height: 3.9375rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--text2);
+}
+
+.card_sub_info {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #868E96;;
+}
+
+.separator {
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+.card_user_info {
+    padding: 0.625rem 1rem;
+    box-sizing: border-box;
+    border-top: 1px solid #F1F3F5;
+    display: flex;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+}
+
+.card_user_info>a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.card_user_info img {
+    object-fit: cover;
+    border-radius: 50%;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: block;
+    margin-right: 0.5rem;
+}
+
+.card_user_info span {
+    color: #868E96;
+}
+
+.card_user_info span b {
+    color: #212529;
+}
+
+.card_likes {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.like_icon {
+    width: 0.75rem;
+    height: 0.75rem;
+    margin-right: 0.5rem;
+}
