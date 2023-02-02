@@ -3,6 +3,7 @@ import router from 'next/router'
 
 import cardsStyle from '../styles/cards.module.css'
 import Card from './card'
+import DummyData from './dummydata.json'
 
 const Cards = () => {
 
@@ -10,7 +11,11 @@ const Cards = () => {
     <div className={cardsStyle.cards}>
       <main className={cardsStyle.cards_main}>
         <div className={cardsStyle.cards_wrap1}>
-          <Card />
+          {DummyData.map((item,idx)=>{
+            return(
+              <Card item={item} key={idx}/>
+            )
+          })}
         </div>
       </main>
     </div>
