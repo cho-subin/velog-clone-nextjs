@@ -2,8 +2,8 @@ import React from 'react'
 import router from 'next/router'
 
 import cardStyle from '../styles/card.module.css'
-import Like from '../../public/like.svg'
 import DummyData from './dummydata.json'
+import iconImage from '@/assets/images/icon'
 
 const Card = () => {
 
@@ -39,7 +39,7 @@ const Card = () => {
                 <span>by <b>{item.nickname}</b></span>
               </a>
               <div className={cardStyle.card_likes}>
-                <Like width={24} height={24} className={cardStyle.like_icon} />
+                <img src={iconImage.like} width={24} height={24} className={cardStyle.like_icon}/>
                 355
               </div>
             </div>
