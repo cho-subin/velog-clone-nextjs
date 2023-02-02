@@ -1,17 +1,15 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 
-const Write = () => {
+const Detail = () => {
+    const route = useRouter();
+    console.log(route)
 
-  const route = useRouter();
-  console.log(route)
-
-  return (
-    <div>
-      여기는 작성페이지
-      git branch에 올라가나요?
-    </div>
-  )
+    return (
+        <div>
+            여기는 상세페이지
+        </div>
+    )
 }
 
-export default Write
+export default Detail
