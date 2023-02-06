@@ -3,7 +3,7 @@ import router from 'next/router'
 
 import cardsStyle from '../styles/cards.module.css'
 import Card from './card'
-import DummyData from './dummydata.json'
+import DummyData from './dummydata'
 
 const Cards = () => {
 
