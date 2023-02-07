@@ -4,9 +4,10 @@ import router from 'next/router'
 import cardStyle from '../styles/card.module.css'
 import iconImage from '@/assets/images/icon'
 import Image from 'next/image'
+import { item } from './dummydata'
 
 interface IPROPS{
-  item:any
+  item: item
 }
 
 const Card:React.FC<IPROPS> = ({item}) => {
