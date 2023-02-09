@@ -2,8 +2,10 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 const Detail = () => {
-    const route = useRouter();
-    console.log(route)
+
+    const router = useRouter();
+    const { detail:id, title } = router.query
+    console.log(id, title)
 
     return (
         <div>
