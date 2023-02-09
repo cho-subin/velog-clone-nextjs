@@ -1,26 +1,29 @@
 import React from 'react'
-import router from 'next/router'
+import router, { useRouter } from 'next/router'
+import Link from 'next/link'
 
 import cardStyle from '../styles/card.module.css'
 import iconImage from '@/assets/images/icon'
 import Image from 'next/image'
-import { item } from './dummydata'
+import { StateType } from '@/redux/slice/dummySlice'
 
 interface IPROPS{
-  item: item
+  item: StateType
 }
 
 const Card:React.FC<IPROPS> = ({item}) => {
 
   const url = item.cardImg
+  console.log(item)
 
   return (
     <div className={cardStyle.card}>
-      <a href=''>
+      <Link href={`/@${item.nickname}/${item.title}`}>
         <div className={cardStyle.card_img}>
-          <Image src={url} alt='cardImg'/>
+          <Image src={url} alt='cardImg' />
         </div>
-      </a>
+      </Link>
+        
       <div className={cardStyle.card_text_wrap}>
         <a href=''>
           <h4>{item.title}</h4>
