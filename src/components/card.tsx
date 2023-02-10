@@ -13,14 +13,16 @@ interface IPROPS{
 
 const Card:React.FC<IPROPS> = ({item}) => {
 
-  const url = item.cardImg
-  console.log(item)
+  const url = `/@${item.nickname}/${item.title}`
+
+  const changeUrl = url.replace(/\s/g, '-')
+  console.log('changeUrl', changeUrl)
 
   return (
     <div className={cardStyle.card}>
-      <Link href={`/@${item.nickname}/${item.title}`}>
+      <Link href={changeUrl}>
         <div className={cardStyle.card_img}>
-          <Image src={url} alt='cardImg' />
+          <Image src={item.cardImg} alt='cardImg' />
         </div>
       </Link>
         
@@ -39,7 +41,7 @@ const Card:React.FC<IPROPS> = ({item}) => {
       </div>
       <div className={cardStyle.card_user_info}>
         <a href=''>
-          <Image src={url} alt='' />
+          <Image src={item.cardImg} alt='' />
           <span>by <b>{item.nickname}</b></span>
         </a>
         <div className={cardStyle.card_likes}>

@@ -14,7 +14,7 @@ const Cards = () => {
   return (
     <div className={cardsStyle.cards}>
       <main className={cardsStyle.cards_main}>
-        <div className={cardsStyle.cards_wrap1}>
+        <div className={cardsStyle.cards_wrap}>
           {select.map((item,idx)=>{
             return(
               <Card item={item} key={idx}/>
