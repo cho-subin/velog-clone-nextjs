@@ -1,13 +1,13 @@
 import Cards from "@/components/cards";
 import React from "react";
-import Header from '../components/header';
-import homeStyle from '../styles/Home.module.css'
+import Header from '../components/header/header';
+import homeStyle from '../styles/Home.module.css';
 
 export default function Home() {
   return (
     <div className={homeStyle.home}>
-      <Header/>
-      <Cards/>
+      <Header />
+      <Cards />
     </div>
   )
 }
