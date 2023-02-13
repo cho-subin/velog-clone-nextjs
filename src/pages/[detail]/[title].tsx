@@ -1,7 +1,8 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import Header from '../../components/header/header';
-import detailStyle from '../../styles/detail.module.css'
+import DetailHeader from '../../components/detail/detailHeader';
+import detailStyle from '../../styles/detail/detail.module.css'
 
 const Detail = () => {
 
@@ -12,6 +13,7 @@ const Detail = () => {
     return (
         <div className={detailStyle.detail}>
             <Header/>
+            <DetailHeader/>
         </div>
     )
 }

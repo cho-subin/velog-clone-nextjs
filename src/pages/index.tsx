@@ -1,4 +1,4 @@
-import Cards from "@/components/cards";
+import Cards from "@/components/main/cards";
 import React from "react";
 import Header from '../components/header/header';
 import homeStyle from '../styles/Home.module.css';

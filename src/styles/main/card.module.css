@@ -7,7 +7,7 @@
     border-radius: 4px;
     box-shadow: rgb(0 0 0 / 4%) 0px 4px 16px 0px;
     transition: box-shadow 0.25s ease-in 0s, transform 0.25s ease-in 0s;
-    margin: 1rem;
+    margin: 1rem 1rem;
     margin-top: none;
     overflow: hidden;
 }
