@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import router from 'next/router'
 
-import cardsStyle from '../styles/cards.module.css'
+import cardsStyle from '../../styles/main/cards.module.css'
 import Card from './card'
-// import DummyData from './dummydata'
 import { useAppSelector } from '@/redux/hook'
 
 const Cards = () => {

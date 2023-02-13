@@ -1,0 +1,197 @@
+
+.detailHeader {
+    display: block;
+    width: 768px;
+    margin-top: 5.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.detailWrap{
+    display: block;
+}
+
+.detailWrap h1 {
+    font-size: 3rem;
+    line-height: 1.5;
+    letter-spacing: -0.004em;
+    margin-top: 0px;
+    font-weight: 800;
+    color: #212529;
+    margin-bottom: 2rem;
+    word-break: keep-all;
+    transition: color 0.125s ease-in 0s;
+}
+
+.detailUserDate {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.UserDateWrap{
+    display: block;
+    
+}
+
+.detailUserId{
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.separator {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    font-size: 1rem;
+    color: #495057;
+}
+
+.detailDate{
+    font-size: 1rem;
+    color: #495057;
+}
+
+.detailTag {
+    margin-top: 0.875rem;
+    margin-bottom: -0.875rem;
+    min-height: 0.875rem;
+}
+
+.tag {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 0.875rem;
+    background: #F8F9FA;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2rem;
+    border-radius: 1rem;
+    margin-right: 0.875rem;
+    color: #12B886;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.asideLike{
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.asideLikeWrap {
+    display: block;
+    position: absolute;
+    left: -7rem;
+}
+
+.asideLikebg {
+    width: 4rem;
+    background: var(--bg-element2);
+    border: 1px solid var(--border4);
+    border-radius: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    background-color: #F8F9FA;
+}
+
+.likeIcon {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background: #FFFFFF;
+    border: 1px solid #DEE2E6;
+    border-radius: 1.5rem;
+    color: #868E96;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.likeIcon:hover {
+    color: #212529;
+    border-color: #212529;
+}
+
+.likeIcon svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.likeCount {
+    margin-top: 0.5rem;
+    color: #495057;
+    line-height: 1;
+    font-size: 0.75rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.navSubTitle {
+    display: block;
+    position: relative;
+    margin-top: 2rem;
+}
+
+.navSubTitleWrap {
+    display: block;
+    position: absolute;
+    left: 100%;
+}
+
+.navSubTitleLists {
+    position: fixed;
+    top: 112px;
+    width: 240px;
+    margin-left: 5rem;
+    border-left: 2px solid #F1F3F5;
+    padding: 0.25rem 0.75rem;
+    color: #868E96;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    max-height: calc(100vh - 128px);
+    overflow: hidden auto;
+}
+
+.navSubTitleList {
+    display: block;
+    transition: all 0.125s ease-in 0s;
+}
+
+.navSubTitleList1 {
+    display: block;
+    transition: all 0.125s ease-in 0s;
+    margin-left: 12px;
+    margin-top: 4px;
+}
+
+.navSubTitleList2 {
+    display: block;
+    transition: all 0.125s ease-in 0s;
+    margin-left: 24px;
+    margin-top: 4px;
+}
+
+.headerImg {
+    display: block;
+    max-height: 100vh;
+    max-width: 100%;
+    width: auto;
+    margin: 2rem auto 0px;
+    height: auto;
+    object-fit: contain;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}

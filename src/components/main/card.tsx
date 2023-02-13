@@ -1,8 +1,7 @@
 import React from 'react'
-import router, { useRouter } from 'next/router'
 import Link from 'next/link'
 
-import cardStyle from '../styles/card.module.css'
+import cardStyle from '../../styles/main/card.module.css'
 import iconImage from '@/assets/images/icon'
 import Image from 'next/image'
 import { StateType } from '@/redux/slice/dummySlice'
@@ -25,14 +24,14 @@ const Card:React.FC<IPROPS> = ({item}) => {
           <Image src={item.cardImg} alt='cardImg' />
         </div>
       </Link>
-        
+      
       <div className={cardStyle.card_text_wrap}>
-        <a href=''>
+        <Link href={changeUrl}>
           <h4>{item.title}</h4>
           <div className={cardStyle.card_text}>
             <p>{item.text}</p>
           </div>
-        </a>
+        </Link>
         <div className={cardStyle.card_sub_info}>
           <span>{item.writeDate}</span>
           <span className={cardStyle.separator}>·</span>
