@@ -1,0 +1,20 @@
+.detailArticle {
+    display: block;
+    width: 768px;
+    margin: 5rem auto 0px;
+}
+
+.detailArticleWrap {
+    display: block;
+    font-size: 1.125rem;
+    color: #212529;
+    transition: color 0.125s ease-in 0s;
+    line-height: 1.7;
+    letter-spacing: -0.004em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.detailArticleLists{
+    display: block;
+}
