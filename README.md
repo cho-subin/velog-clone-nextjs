@@ -24,19 +24,19 @@ Main
 # 작업일정 (2월 10일~)
 ```bash
 2월 10일
-- degail page header 작업 - 로고부분 재사용가능 컴포넌트로 작업
-- 재사용 컴포넌트 파일 정리 고민
-- detail/[idx]/index ui 작업
+[v] degail page header 작업 - 로고부분 재사용가능 컴포넌트로 작업
+[v] 재사용 컴포넌트 파일 정리 고민
+[v] detail/[idx]/index ui 작업
 
 2월 13일
-- detailHeader ui 작업
-- detailTag ui 작업
-- asideLike ui 작업
-- navSubTitle ui 작업
+[v] detailHeader ui 작업
+[v] detailTag ui 작업
+[v] asideLike ui 작업
+[v] navSubTitle ui 작업
 
 2월 14일
-- detailArticle ui 작업
-- writepage 컴포넌트 나누기(figma)
+[v] detailArticle ui 작업
+[v] writepage 컴포넌트 나누기(figma)
 
 2월 15일
 - sectionUser ui 작업
