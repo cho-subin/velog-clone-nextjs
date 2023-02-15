@@ -1,0 +1,306 @@
+.sectionComment {
+    display: block;
+    margin-top: 3rem;
+    color: #212529;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionComment h4 {
+    font-size: 1.125rem;
+    line-height: 1.5;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sectionCommentWrap{
+    display: block;
+}
+
+.sectionCommentTextArea{
+    display: block;
+}
+
+.commentTextArea {
+    width: 100%;
+    height: 70px;
+    resize: none;
+    padding: 1rem 1rem 1.5rem;
+    outline: none;
+    border: 1px solid #F1F3F5;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    min-height: 6.125rem;
+    font-size: 1rem;
+    color: #212529;
+    line-height: 1.75;
+    background: #FFFFFF;
+}
+
+.sectionCommentBtnWrap {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+}
+
+.sectionCommentBtnWrap button {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #12B886;
+    color: #FFFFFF;
+    border-radius: 4px;
+    padding: 1.1rem 1.25rem 1rem 1.25rem;
+    height: 2rem;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+.sectionCommentList{
+    display: block;
+    margin-top: 2.5rem;
+}
+
+.section{
+    margin-top: -1.5rem;
+}
+
+.sectionCommentListWrap{
+    display: block;
+}
+
+.sectionComment {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.sectionCommentProfileWrap {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.sectionCommentProfile {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.sectionCommentProfileImg {
+    display: block;
+    width: 3.375rem;
+    height: 3.375rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sectionCommentUser {
+    margin-left: 1rem;
+    line-height: 1;
+}
+
+.sectionCommentId {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #212529;
+}
+
+.sectionCommentDate {
+    margin-top: 0.5rem;
+    color: #868E96;
+    font-size: 0.875rem;
+}
+
+.sectionCommentText {
+    display: block;
+    font-size: 1.125rem;
+    color: #212529;
+    transition: color 0.125s ease-in 0s;
+    line-height: 1.7;
+    letter-spacing: -0.004em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.sectionReplyCommentBtn {
+    display: block;
+    margin-top: 2rem;
+}
+
+.sectionReplyCommentBtnWrap {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #12B886;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sectionReplyCommentIcon{
+    margin-right: 0.5rem;
+}
+
+.sectionReplyCommentList {
+    display: block;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+    background-color: rgba(0, 0, 0, 0.016);
+    padding: 1.5rem;
+    border-radius: 4px;
+    margin-top: 1.3125rem;
+}
+
+.sectionReplyCommentWrap{
+    display: block;
+}
+
+.sectionReplyComment {
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-top: 1px solid #F1F3F5;
+}
+
+.sectionReplyCommentProfileWrap {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.sectionReplyCommentProfile {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.sectionReplyCommentProfileImg {
+    width: 3.375rem;
+    height: 3.375rem;
+    display: block;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.sectionReplyCommentUser {
+    display: block;
+    margin-left: 1rem;
+    line-height: 1;
+}
+
+.sectionReplyCommentDate {
+    margin-top: 0.5rem;
+    color: var(--text3);
+    font-size: 0.875rem;
+}
+
+.sectionReplyCommentText {
+    font-size: 1.125rem;
+    color: var(--text1);
+    transition: color 0.125s ease-in 0s;
+    line-height: 1.7;
+    letter-spacing: -0.004em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.section2 {
+    width: 100%;
+    height: 1px;
+    background: #E9ECEF;
+    margin-bottom: 1.5rem;
+}
+
+.sectionReplyTextArea{
+    display: block;
+    padding-bottom: 1.5rem;
+}
+
+.sectionReplyTextArea textarea {
+    width: 100%;
+    height: 70px;
+    resize: none;
+    padding: 1rem 1rem 1.5rem;
+    outline: none;
+    border: 1px solid #F1F3F5;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    min-height: 6.125rem;
+    font-size: 1rem;
+    color: var(--text1);
+    line-height: 1.75;
+    background: #FFFFFF;
+}
+
+.sectionReplyWriteBtn {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    height: 2.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border: 1px solid #12B886;
+    outline: none;
+    color: #12B886;
+    width: 100%;
+    font-weight: 600;
+    background: #FFFFFF;
+}
+
+.sectionReplyBtnsWrap {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    margin-top: -1.5rem;
+}
+
+.sectionReplyCloseBtn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: none;
+    color: #12B886;
+    border-radius: 4px;
+    padding: 0px 1.25rem;
+    height: 2rem;
+    font-size: 1rem;
+}
+
+.sectionReplySendBtn {
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: #12B886;
+    color: #FFFFFF;
+    border-radius: 4px;
+    margin-left: 0.5rem;
+    padding: 0rem 1.25rem;
+    height: 2rem;
+    font-size: 1rem;
+}
