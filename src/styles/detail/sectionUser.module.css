@@ -1,0 +1,81 @@
+.sectionUser {
+    display: block;
+    margin-top: 16rem;
+    margin-bottom: 6rem;
+
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sectionUserWrap{
+    display: block;
+}
+
+.sectionUserLists {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.sectionUserImg {
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: rgb(0 0 0 / 6%) 0px 0px 4px;
+}
+
+.sectionUserText {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.sectionUserId {
+    display: block;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-weight: bold;
+    color: #212529;
+}
+
+.sectionUserMessage {
+    display: block;
+    white-space: pre-wrap;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    margin-top: 0.25rem;
+    color: #495057;
+    letter-spacing: -0.004em;
+}
+
+.sectionUserLine {
+    display: block;
+    background: #E9ECEF;
+    width: 100%;
+    height: 1px;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.sectionUserGitEmail {
+    color: #868E96;
+    display: flex;
+}
+
+.sectionUserGit{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+.sectionUserEmail {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+}
