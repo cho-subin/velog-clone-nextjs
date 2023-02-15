@@ -4,6 +4,7 @@ import Header from '../../components/header/header';
 import DetailHeader from '../../components/detail/detailHeader';
 import DetailArticle from '../../components/detail/detailArticle';
 import SectionUser from '../../components/detail/sectionUser';
+import SectionNevNext from '../../components/detail/sectionNevNext';
 
 import detailStyle from '../../styles/detail/detail.module.css'
 
@@ -19,6 +20,7 @@ const Detail = () => {
             <DetailHeader/>
             <DetailArticle/>
             <SectionUser/>
+            <SectionNevNext/>
         </div>
     )
 }
