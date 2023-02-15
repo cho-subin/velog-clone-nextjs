@@ -39,24 +39,26 @@ Main
 [v] writepage 컴포넌트 나누기(figma)
 
 2월 15일
-- sectionUser ui 작업
-- sectionNevNext ui 작업
-- sectionComment ui 작업
-- 좋아요 버튼 작업 (임시 redux로)
-- 작성자 모든 포스트 목록 보기 (임시 redux로)
+[v] sectionUser ui 작업
+[v] sectionNevNext ui 작업
+[v] sectionComment ui 작업
 
 2월 16일
+- 좋아요 버튼 작업 (임시 redux로)
+- 작성자 모든 포스트 목록 보기 (임시 redux로)
 - 댓글쓰기 (임시 redux로)
-- write page ui 작업
 
 2월 17일
+- write page ui 작업
+
+2월 20일
 - 작성글 실시간 미리보기
 - 뒤로가기
 
-2월 20일
+2월 21일
 - 임시저장 기능
 - Input 내용 저장 기능(출간하기)
 
-2월 21일~28일
+2월 22일~28일
 - 리팩토링, 부족한 부분 고치기
 ```
