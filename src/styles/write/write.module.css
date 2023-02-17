@@ -11,20 +11,25 @@
 }
 
 .wrtieLeft {
-    display: flex;
     min-width: 0px;
-    height: 100%;
     flex: 1 1 0%;
+    display: flex;
     flex-direction: column;
     position: relative;
     z-index: 1;
-    background-color: #FFFFFF;
     box-shadow: rgb(0 0 0 / 2%) 0px 0px 8px;
+    background-color: #FFFFFF;
 }
 
 .wrtieLeftWrap {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.wrtieLeftWrap1 {
     min-height: 0px;
-    padding-bottom: 4rem;
     flex: 1 1 0%;
     display: flex;
     flex-direction: column;
@@ -32,8 +37,7 @@
 
 .writeHeader {
     display: block;
-    /* max-height: 491px; */
-    height: 25%;
+    max-height: 491px;
     opacity: 1;
 }
 
@@ -158,33 +162,48 @@
     flex-direction: column;
 }
 
+.writeArticleWrap {
+    min-height: 0px;
+    flex: 1 1 0%;
+    font-size: 1.125rem;
+    line-height: 1.5;
+    color: #212529;
+    font-family: "Fira Mono", monospace;
+
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+}
+
 .writeArticleWrap1 {
     display: block;
-    /* padding-top: 2rem; */
-    padding-left: 3rem;
-    padding-right: 3rem;
-    /* background-color: #495057; */
+    overflow: hidden;
+    /* position: relative; */
+    width: 3px;
+    height: 0px;
+    /* top: 4px;
+    left: 177.602px; */
 }
 
 .writeArticleWrap1 textarea {
     display: block;
     position: absolute;
-    padding: 0px;
     width: 100%;
-    height: 61%;
+    height: 100%;
     outline: none;
     border: none;
     overflow: scroll;
     resize: none;
     background: transparent;
     font-size: 1rem;
-    background-color: #868E96;
+    padding-left: 3rem;
+    padding-bottom: 1rem;
 }
 
 .writeSendSection {
     display: block;
-    position: fixed;
-    bottom: 0px;
+    /* position: fixed; */
+    /* bottom: 0px; */
     width: 100%;
     z-index: 10;
 }
@@ -258,4 +277,43 @@
     padding: 0px 1.25rem;
     font-size: 1.125rem;
     margin-left: 0.75rem;
+}
+
+.writeRight {
+    min-width: 0px;
+    flex: 1 1 0%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #FBFDFC;
+}
+
+.wirtePreview {
+    display: block;
+    flex: 1 1 0%;
+    padding: 3rem;
+    overflow-y: auto;
+    word-break: break-word;
+    color: #212529;
+}
+
+.wirtePreview h1 {
+    font-size: 2.5em;
+    margin-bottom: 4rem;
+    font-weight: 800;
+}
+
+.wirtePreviewTexts {
+    display: block;
+    font-size: 1.125rem;
+    color: #212529;
+    transition: color 0.125s ease-in 0s;
+    line-height: 1.7;
+    letter-spacing: -0.004em;
+    word-break: keep-all;
+    overflow-wrap: break-word;
+}
+
+.wirtePreviewText{
+    display: block;
 }

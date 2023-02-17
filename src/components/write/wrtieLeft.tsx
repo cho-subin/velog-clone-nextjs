@@ -10,11 +10,16 @@ const wrtieLeft = () => {
     return (
         <div className={WrtieStyle.wrtieLeft}>
             <div className={WrtieStyle.wrtieLeftWrap}>
-                <WriteHeader />
-                <WriteToolBar />
-                <WriteArticle />
-                <WriteSendSection />
+                <div className={WrtieStyle.wrtieLeftWrap1}>
+                    <WriteHeader />
+                    <WriteToolBar />
+                    <WriteArticle />
+                </div>
+                <div className={WrtieStyle.writeSendSection}>
+                    <WriteSendSection />
+                </div>
             </div>
+            
         </div>
     )
 }
