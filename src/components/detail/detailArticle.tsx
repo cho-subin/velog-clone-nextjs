@@ -1,12 +1,17 @@
+import { StateType } from '@/redux/slice/dummySlice'
 import React from 'react'
 import detailArticleStyle from '../../styles/detail/detailArticle.module.css'
+interface IPROPS {
+    detailData: StateType
+}
 
-const detailArticle = () => {
+const detailArticle: React.FC<IPROPS> = ({ detailData }) => {
+    console.log()
     return (
         <div className={detailArticleStyle.detailArticle} >
             <div className={detailArticleStyle.detailArticleWrap}>
                 <div className={detailArticleStyle.detailArticleLists}>
-                    <p>마크다운 그거 어떻게 하는건데....🥲</p>
+                    <p>{detailData?.text}</p>
                     <ul>
                         <li>
                             안녕

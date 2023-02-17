@@ -5,13 +5,21 @@ import DetailTag from './detailTag'
 import DetailAsideLike from './detailAsideLike'
 import NavSubTitle from './navSubTitle'
 import Image from 'next/image'
+import { StateType } from '@/redux/slice/dummySlice'
 
-const detailHeader = () => {
+interface IPROPS {
+    detailData: StateType
+}
+
+const detailHeader: React.FC<IPROPS> = ({detailData}) => {
+
+    console.log('detailData',detailData)
+
     return (
         <div className={detailHeaderStyle.detailHeader}>
             <div className={detailHeaderStyle.detailWrap}>
-                <h1>객체지향으로 리액트 고급 패턴 이해하기[Compound component & Render props]</h1>
-                <DetailUserDate/>
+                <h1>{detailData?.title}</h1>
+                <DetailUserDate detailData={detailData}/>
                 <DetailTag/>
                 <DetailAsideLike/>
                 <NavSubTitle/>
