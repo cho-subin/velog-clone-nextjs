@@ -1,5 +1,7 @@
 import React from 'react'
 import WriteHeader from '@/components/write/writeHeader';
+import WriteToolBar from '@/components/write/writeToolBar';
+
 import WrtieStyle from '../../styles/write/write.module.css'
 
 const wrtieLeft = () => {
@@ -7,6 +9,7 @@ const wrtieLeft = () => {
         <div className={WrtieStyle.wrtieLeft}>
             <div className={WrtieStyle.wrtieLeftWrap}>
                 <WriteHeader />
+                <WriteToolBar />
             </div>
         </div>
     )

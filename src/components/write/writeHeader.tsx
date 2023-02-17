@@ -9,6 +9,7 @@ const writeHeader = () => {
                 <div className={WrtieStyle.writeHeaderLine} />
                 <div className={WrtieStyle.writeHeaderTag} >
                     <input placeholder='태그를 입력하세요' className={WrtieStyle.writeHeaderTag} />
+                    <div className={WrtieStyle.writeHeaderTagDiv}></div>
                 </div>
             </div>
         </div>
