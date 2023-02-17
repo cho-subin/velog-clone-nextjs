@@ -5,7 +5,7 @@ const writeArticle = () => {
     return (
         <div className={WrtieStyle.writeArticle}>
             <div className={WrtieStyle.writeArticleWrap1}>
-                <textarea placeholder='당신의 이야기를 적어보세요...' autoCorrect="off" autoCapitalize="off" spellCheck="false" />
+                <textarea placeholder='당신의 이야기를 적어보세요...' />
             </div>
         </div>
     )
