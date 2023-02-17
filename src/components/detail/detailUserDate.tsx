@@ -1,14 +1,19 @@
+import { StateType } from '@/redux/slice/dummySlice'
 import Link from 'next/link'
 import React from 'react'
 import detailHeaderStyle from '../../styles/detail/detailHeader.module.css'
 
-const detailUserDate = () => {
+interface IPROPS {
+    detailData: StateType
+}
+
+const detailUserDate: React.FC<IPROPS> = ({ detailData }) => {
     return (
         <div className={detailHeaderStyle.detailUserDate}>
             <div className={detailHeaderStyle.UserDateWrap}>
                 <span className={detailHeaderStyle.detailUserId}>
                     <Link href={'/'}>
-                        유저아이디
+                        {detailData?.nickname}
                     </Link>
                 </span>
                 <span className={detailHeaderStyle.separator}>·</span>

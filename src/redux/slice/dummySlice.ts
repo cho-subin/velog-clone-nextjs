@@ -17,11 +17,13 @@ export type StateType = {
   numberOfComments:number,
   profileImg: string | StaticImageData,
   nickname:string,
+  profileMsg: string,
   numberOfLike:number
 };
 
 // initalState 생성
-const initialState: StateType[] = [
+const initialState = {
+  data:[
     {
       "cardImg": dummy1,
       "title": "객체지향이란?",
@@ -30,6 +32,7 @@ const initialState: StateType[] = [
       "numberOfComments": 10,
       "profileImg": dummy1,
       "nickname": "subin",
+      "profileMsg": "프론트엔드 입니다",
       "numberOfLike": 30,
     },
     {
@@ -40,6 +43,7 @@ const initialState: StateType[] = [
       "numberOfComments": 5,
       "profileImg": dummy2,
       "nickname": "bin",
+      "profileMsg": "신입 입니다",
       "numberOfLike": 15
     },
     {
@@ -50,6 +54,7 @@ const initialState: StateType[] = [
       "numberOfComments": 0,
       "profileImg": dummy3,
       "nickname": "day23",
+      "profileMsg": "할 수 있다!",
       "numberOfLike": 8
     },
     {
@@ -60,9 +65,21 @@ const initialState: StateType[] = [
       "numberOfComments": 2,
       "profileImg": dummy4,
       "nickname": "nib",
+      "profileMsg": "물경력은 싫어요",
       "numberOfLike": 10
     },
-];
+],
+  current:{
+      "cardImg": dummy1,
+      "title": "객체지향이란?",
+      "text": "지금껏 객체지향 이라는 키워드는 수없이 들어왔고, 객체지향을 잘 이해했다고 생각하며 학습을 해왔던 것 같습니다. 대학교 수업시간에 배워왔던 객체지향관련 수업을 듣고 이런게 객체지향이라는건가? 라는 착각만 가득했었죠. 평상시 학습해왔던 것들은 큰 오해를 가지고 학습했었던 겁니다.이번 기회에 진짜 객체지향이란 무엇인지 명확히 설명할 수있는 수준은 아니지만, 적어도 객체지향적인 접근이란 무엇이며, 많은 사람들이 오해할 수 있는 객체지향이란 무엇인지를 포스팅하며 제 포스팅을 보시는 분들과 공유하고자 합니다.",
+      "writeDate": "2023년 2월 1일",
+      "numberOfComments": 10,
+      "profileImg": dummy1,
+      "nickname": "subin",
+      "numberOfLike": 30,
+    }as StateType,
+};
 
 // 슬라이스생성
 export const dummySlice = createSlice({
@@ -70,16 +87,23 @@ export const dummySlice = createSlice({
   initialState,
   reducers: {
     // action의 타입은 PayloadAction<제네릭> 으로 정의해준다.
-    geDummyData: (state: StateType[], action: PayloadAction<StateType>) => {
+    getDummyData: (state, action: PayloadAction<any>) => {
       // immer가 내장되어 있어서, 불변성 신경 쓰지 않고 바로 수정해주면 된다.
       state
       console.log('리듀서',state)
     },
+    updateCurrent: (state, action: PayloadAction<{title:string,id:string}>)=>{
+      const {title, id} = action.payload
+      const data = state.data
+      let newData = data.filter((item)=>item.nickname===id)
+      newData = newData.filter((item)=>item.title.includes(title))
+      state.current = newData[0]
+    }
   }
 });
 
 // 액션을 export 해준다.
-export const { geDummyData } = dummySlice.actions;
+export const { getDummyData, updateCurrent } = dummySlice.actions;
 
 // 슬라이스를 export 해준다.
 export default dummySlice;
