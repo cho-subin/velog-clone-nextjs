@@ -1,5 +1,7 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import WriteLeft from '@/components/write/wrtieLeft';
+import WrtieStyle from '../../styles/write/write.module.css'
 
 const Write = () => {
 
@@ -7,8 +9,10 @@ const Write = () => {
   console.log(route)
 
   return (
-    <div>
-      여기는 작성페이지
+    <div className={WrtieStyle.write}>
+      <div className={WrtieStyle.writeWrap}>
+        <WriteLeft/>
+      </div>
     </div>
   )
 }
