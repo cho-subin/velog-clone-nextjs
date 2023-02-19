@@ -2,6 +2,7 @@
 // 슬라이스들을 통합한 store를 만들고, RootState를 정의해준다.
 
 import { configureStore, Action } from '@reduxjs/toolkit';
+import commentSlice from './slice/commentSlice';
 import dummySlice from './slice/dummySlice';
 
 // 리덕스 store 생성함수
@@ -17,6 +18,7 @@ const makeStore = () => {
     reducer: {
       getDummyData: dummySlice.reducer,
       updateCurrent: dummySlice.reducer,
+      comment:commentSlice.reducer
     //   number: numberSlice.reducer
       // [counterSlice.name]: counterSlice.reducer, // 위와 동일한 코드다.
       // [numberSlice.name]: numberSlice.reducer
