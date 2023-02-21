@@ -18,7 +18,8 @@ export type StateType = {
   profileImg: string | StaticImageData,
   nickname:string,
   profileMsg: string,
-  numberOfLike:number
+  numberOfLike:number,
+  isLike?:string,
 };
 
 // initalState 생성
@@ -34,6 +35,7 @@ const initialState = {
       "nickname": "subin",
       "profileMsg": "프론트엔드 입니다",
       "numberOfLike": 30,
+      "isLike": 'N',
     },
     {
       "cardImg": dummy2,
@@ -44,7 +46,8 @@ const initialState = {
       "profileImg": dummy2,
       "nickname": "bin",
       "profileMsg": "신입 입니다",
-      "numberOfLike": 15
+      "numberOfLike": 15,
+      "isLike": 'N'
     },
     {
       "cardImg": dummy3,
@@ -55,7 +58,8 @@ const initialState = {
       "profileImg": dummy3,
       "nickname": "day23",
       "profileMsg": "할 수 있다!",
-      "numberOfLike": 8
+      "numberOfLike": 8,
+      "isLike": 'N'
     },
     {
       "cardImg": dummy4,
@@ -66,7 +70,8 @@ const initialState = {
       "profileImg": dummy4,
       "nickname": "nib",
       "profileMsg": "물경력은 싫어요",
-      "numberOfLike": 10
+      "numberOfLike": 10,
+      "isLike": 'N'
     },
 ],
   current:{
@@ -78,6 +83,7 @@ const initialState = {
       "profileImg": dummy1,
       "nickname": "subin",
       "numberOfLike": 30,
+      "isLike": 'N'
     }as StateType,
 };
 
@@ -98,12 +104,24 @@ export const dummySlice = createSlice({
       let newData = data.filter((item)=>item.nickname===id)
       newData = newData.filter((item)=>item.title.includes(title))
       state.current = newData[0]
-    }
+    },
+    addLike: (state, action: PayloadAction<{like:number, trueLike:string}>)=>{
+      let data = state.current
+      const { like, trueLike } = action.payload;
+      data.isLike = trueLike;
+      data.numberOfLike += like;
+    },
+    removeLike: (state, action: PayloadAction<{like:number, trueLike:string}>)=>{
+      let data = state.current
+      const { like, trueLike } = action.payload;
+      data.isLike = trueLike;
+      data.numberOfLike -= like;
+    },
   }
 });
 
 // 액션을 export 해준다.
-export const { getDummyData, updateCurrent } = dummySlice.actions;
+export const { getDummyData, updateCurrent, addLike, removeLike } = dummySlice.actions;
 
 // 슬라이스를 export 해준다.
 export default dummySlice;

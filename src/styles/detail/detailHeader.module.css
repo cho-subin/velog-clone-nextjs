@@ -119,12 +119,39 @@
     z-index: 5;
 }
 
+.likeIconActive {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background: #20C997;
+    border: 1px solid #20C997;
+    border-radius: 1.5rem;
+    color: #FFFFFF;
+    cursor: pointer;
+    z-index: 5;
+}
+
 .likeIcon:hover {
     color: #212529;
     border-color: #212529;
 }
 
+.likeIconActive:hover {
+    background: rgb(56, 217, 169);
+    border-color: rgb(56, 217, 169);
+    color: #FFFFFF;
+}
 .likeIcon svg {
+    width: 24px;
+    height: 24px;
+    fill: currentColor;
+}
+
+.likeIconActive svg {
     width: 24px;
     height: 24px;
     fill: currentColor;

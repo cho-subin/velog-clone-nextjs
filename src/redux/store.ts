@@ -18,14 +18,16 @@ const makeStore = () => {
     reducer: {
       getDummyData: dummySlice.reducer,
       updateCurrent: dummySlice.reducer,
-      comment:commentSlice.reducer
-    //   number: numberSlice.reducer
+      addLike: dummySlice.reducer,
+      removeLike: dummySlice.reducer,
+      comment: commentSlice.reducer,
+      //   number: numberSlice.reducer
       // [counterSlice.name]: counterSlice.reducer, // 위와 동일한 코드다.
       // [numberSlice.name]: numberSlice.reducer
     },
     //middleware, // 미들웨어 불필요시 생략
     // middleware: [...getDefaultMiddleware(), logger]
-    devTools: process.env.NODE_ENV === 'development' // 개발자도구 설정
+    devTools: process.env.NODE_ENV === "development", // 개발자도구 설정
   });
 
   return store;
