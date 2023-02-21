@@ -21,7 +21,7 @@ const detailHeader: React.FC<IPROPS> = ({detailData}) => {
                 <h1>{detailData?.title}</h1>
                 <DetailUserDate detailData={detailData}/>
                 <DetailTag/>
-                <DetailAsideLike/>
+                <DetailAsideLike numberOfLike={detailData.numberOfLike} />
                 <NavSubTitle/>
             </div>
             <Image src={''} alt='' className={detailHeaderStyle.headerImg}/>
