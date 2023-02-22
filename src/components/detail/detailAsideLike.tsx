@@ -15,9 +15,9 @@ const DetailAsideLike: React.FC<IPROPS> = ({ numberOfLike }) => {
 
     const { isLike } = useAppSelector((state)=>state.getDummyData.current)
 
-    console.log('detailData1', numberOfLike)
-    console.log('detailData?.numberOfLike', numberOfLike)
-    console.log('isLike', isLike)
+    // console.log('detailData1', numberOfLike)
+    // console.log('detailData?.numberOfLike', numberOfLike)
+    // console.log('isLike', isLike)
 
     const dispatch = useAppDispatch();
 

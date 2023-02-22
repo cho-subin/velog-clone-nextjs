@@ -14,10 +14,10 @@ const Card:React.FC<IPROPS> = ({item}) => {
 
   const url = `/@${item.nickname}/${item.title}`
 
-  console.log('url',url)
+  // console.log('url',url)
 
   const changeUrl = url.replace(/\s/g, '-')
-  console.log('changeUrl', changeUrl)
+  // console.log('changeUrl', changeUrl)
 
   return (
     <div className={cardStyle.card}>
