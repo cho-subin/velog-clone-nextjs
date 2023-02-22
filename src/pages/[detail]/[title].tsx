@@ -24,13 +24,12 @@ const Detail = () => {
 
     const changeUrl = (title as string)?.replace(/\-/g, ' ')
 
-    console.log('changeUrl1', changeUrl)
-    console.log('detailData', detailData)
+    // console.log('changeUrl1', changeUrl)
+    // console.log('detailData', detailData)
 
     useEffect(()=>{
         if(typeof title=='string' && typeof id=='string'){
             dispatch(updateCurrent({ title:changeUrl, id }))
-            console.log('안뜨나')
         }
     },[])
 

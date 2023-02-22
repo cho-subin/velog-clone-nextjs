@@ -8,7 +8,7 @@ type props = {
 }
 
 const headerLogo = ({ className, children}:props) => {
-    console.log('className',className)
+    // console.log('className',className)
     return (
         <div className={className}>
             {children}

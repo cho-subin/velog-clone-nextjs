@@ -7,7 +7,7 @@ import { useAppSelector } from '@/redux/hook'
 const Cards = () => {
 
   const select = useAppSelector((state) => state.getDummyData.data)
-  console.log('select', select)
+  // console.log('select', select)
 
   return (
     <div className={cardsStyle.cards}>

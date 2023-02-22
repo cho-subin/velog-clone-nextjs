@@ -13,7 +13,7 @@ interface IPROPS {
 
 const detailHeader: React.FC<IPROPS> = ({detailData}) => {
 
-    console.log('detailData',detailData)
+    // console.log('detailData',detailData)
 
     return (
         <div className={detailHeaderStyle.detailHeader}>

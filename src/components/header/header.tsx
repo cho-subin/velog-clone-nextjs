@@ -11,7 +11,7 @@ const Header = () => {
     const router = useRouter();
     
     const {detail:id} = router.query
-    console.log('detail', id)
+    // console.log('detail', id)
 
     const noneId = id?.slice(1)
 
