@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import WrtieStyle from '../../styles/write/write.module.css'
+import WrtieStyle from '../../../styles/write/write.module.css'
 
 const writeToolBar = () => {
   return (

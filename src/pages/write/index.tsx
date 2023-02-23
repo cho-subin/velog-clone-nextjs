@@ -12,8 +12,9 @@ const Write = () => {
   return (
     <div className={WrtieStyle.write}>
       <div className={WrtieStyle.writeWrap}>
+
         <WriteLeft/>
-        <WriteRight/>
+        {/* <WriteRight/> */}
       </div>
     </div>
   )
