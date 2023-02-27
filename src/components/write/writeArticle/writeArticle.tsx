@@ -1,16 +1,28 @@
 import React from 'react'
-import WrtieStyle from '../../styles/write/write.module.css'
 
-const writeArticle = () => {
+import type { NextPage } from "next"
+import { useCallback, useState } from "react"
+import { Editor } from "./mdAditor";
+
+type DraftPageProps = {
+}
+
+const WriteArticle: NextPage<DraftPageProps> = ({
+
+}) => {
+    const [value, setValue] = useState("당신의 이야기를 적어보세요...")
+
+    const handleChange = useCallback((value:any) => {
+        setValue(value)
+    }, [])
+
     return (
-        <div className={WrtieStyle.writeArticle}>
-            <div className={WrtieStyle.writeArticleWrap}>
-                <div className={WrtieStyle.writeArticleWrap1}>
-                    <textarea placeholder='당신의 이야기를 적어보세요...' />
-                </div>
-            </div>
+        <div>
+            <Editor
+                value={value}
+                onChange={handleChange}
+            />
         </div>
     )
 }
-
-export default writeArticle
+export default WriteArticle

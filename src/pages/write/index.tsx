@@ -14,7 +14,6 @@ const Write = () => {
       <div className={WrtieStyle.writeWrap}>
 
         <WriteLeft/>
-        {/* <WriteRight/> */}
       </div>
     </div>
   )
