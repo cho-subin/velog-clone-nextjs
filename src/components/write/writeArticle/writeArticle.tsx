@@ -2,25 +2,24 @@ import React from 'react'
 
 import type { NextPage } from "next"
 import { useCallback, useState } from "react"
-import { Editor } from "./mdAditor";
+import { MDEditor } from "./mdAditor";
 
-type DraftPageProps = {
-}
-
-const WriteArticle: NextPage<DraftPageProps> = ({
-
-}) => {
+const WriteArticle: NextPage = ({ }) => {
     const [value, setValue] = useState("당신의 이야기를 적어보세요...")
 
-    const handleChange = useCallback((value:any) => {
-        setValue(value)
+    const handleChange = useCallback((value?:string) => {
+        setValue(value as string)
     }, [])
+
+    console.log('value', value)
 
     return (
         <div>
-            <Editor
+            <MDEditor
                 value={value}
                 onChange={handleChange}
+                height={580}
+                style={{ marginLeft: '3rem', marginRight: '3rem' }}
             />
         </div>
     )
