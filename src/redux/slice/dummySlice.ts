@@ -89,39 +89,66 @@ const initialState = {
 
 // 슬라이스생성
 export const dummySlice = createSlice({
-  name: 'dummyData',
+  name: "dummyData",
   initialState,
   reducers: {
     // action의 타입은 PayloadAction<제네릭> 으로 정의해준다.
     getDummyData: (state, action: PayloadAction<any>) => {
       // immer가 내장되어 있어서, 불변성 신경 쓰지 않고 바로 수정해주면 된다.
-      state
-      console.log('리듀서',state)
+      state;
+      console.log("리듀서", state);
     },
-    updateCurrent: (state, action: PayloadAction<{title:string,id:string}>)=>{
-      const {title, id} = action.payload
-      const data = state.data
-      let newData = data.filter((item)=>item.nickname===id)
-      newData = newData.filter((item)=>item.title.includes(title))
-      state.current = newData[0]
+    updateDummyData: (
+      state,
+      action: PayloadAction<{
+        cardImg: StaticImageData;
+        title: string;
+        text: string;
+        writeDate: string;
+        numberOfComments: number;
+        profileImg: StaticImageData;
+        nickname: string;
+        profileMsg: string;
+        numberOfLike: number;
+        isLike: string;
+      }>
+    ) => {
+      const updateData = state.data.push(action.payload);
+      console.log("updateData", updateData);
     },
-    addLike: (state, action: PayloadAction<{like:number, trueLike:string}>)=>{
-      let data = state.current
+    updateCurrent: (
+      state,
+      action: PayloadAction<{ title: string; id: string }>
+    ) => {
+      const { title, id } = action.payload;
+      const data = state.data;
+      let newData = data.filter((item) => item.nickname === id);
+      newData = newData.filter((item) => item.title.includes(title));
+      state.current = newData[0];
+    },
+    addLike: (
+      state,
+      action: PayloadAction<{ like: number; trueLike: string }>
+    ) => {
+      let data = state.current;
       const { like, trueLike } = action.payload;
       data.isLike = trueLike;
       data.numberOfLike += like;
     },
-    removeLike: (state, action: PayloadAction<{like:number, trueLike:string}>)=>{
-      let data = state.current
+    removeLike: (
+      state,
+      action: PayloadAction<{ like: number; trueLike: string }>
+    ) => {
+      let data = state.current;
       const { like, trueLike } = action.payload;
       data.isLike = trueLike;
       data.numberOfLike -= like;
     },
-  }
+  },
 });
 
 // 액션을 export 해준다.
-export const { getDummyData, updateCurrent, addLike, removeLike } = dummySlice.actions;
+export const { getDummyData, updateCurrent, addLike, removeLike, updateDummyData } = dummySlice.actions;
 
 // 슬라이스를 export 해준다.
 export default dummySlice;

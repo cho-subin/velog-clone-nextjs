@@ -11,12 +11,12 @@ const wrtieLeft = () => {
         <div className={WrtieStyle.wrtieLeft}>
             <div className={WrtieStyle.wrtieLeftWrap}>
                 <div className={WrtieStyle.wrtieLeftWrap1}>
-                    <WriteHeader />
+                    {/* <WriteHeader /> */}
                     <WriteArticle />
                 </div>
-                <div className={WrtieStyle.writeSendSection}>
+                {/* <div className={WrtieStyle.writeSendSection}>
                     <WriteSendSection />
-                </div>
+                </div> */}
             </div>
             
         </div>
