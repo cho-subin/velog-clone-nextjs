@@ -12,7 +12,7 @@ const detailArticle: React.FC<IPROPS> = ({ detailData }) => {
             <div className={detailArticleStyle.detailArticleWrap}>
                 <div className={detailArticleStyle.detailArticleLists}>
                     <p>{detailData?.text}</p>
-                    <ul>
+                    {/* <ul>
                         <li>
                             안녕
                         </li>
@@ -31,7 +31,7 @@ const detailArticle: React.FC<IPROPS> = ({ detailData }) => {
                         <code>
                             <span>const b = a</span>
                         </code>
-                    </pre>
+                    </pre> */}
                 </div>
             </div>
         </div>

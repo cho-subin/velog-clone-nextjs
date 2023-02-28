@@ -17,6 +17,7 @@ const makeStore = () => {
   const store = configureStore({
     reducer: {
       getDummyData: dummySlice.reducer,
+      updateDummyData: dummySlice.reducer,
       updateCurrent: dummySlice.reducer,
       addLike: dummySlice.reducer,
       removeLike: dummySlice.reducer,
