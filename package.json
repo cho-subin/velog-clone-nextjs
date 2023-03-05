@@ -15,6 +15,7 @@
     "@types/react": "18.0.27",
     "@types/react-dom": "18.0.10",
     "@types/react-redux": "^7.1.25",
+    "@uiw/react-markdown-preview": "^4.1.9",
     "@uiw/react-md-editor": "^3.6.0",
     "eslint": "8.33.0",
     "eslint-config-next": "13.1.6",

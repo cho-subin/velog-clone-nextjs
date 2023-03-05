@@ -9,9 +9,9 @@ interface IPROPS {
 
 const DetailUserDate: React.FC<IPROPS> = ({ detailData }) => {
 
-    const writeDate = detailData.writeDate
+    const writeDate = detailData?.writeDate
     
-    let dateArray:RegExpMatchArray | null = writeDate.match(/\d+/g);
+    let dateArray:RegExpMatchArray | null = writeDate?.match(/\d+/g);
 
     let stringYear = (dateArray as RegExpMatchArray)[0] + '-' + (dateArray as RegExpMatchArray)[1] + '-' + (dateArray as RegExpMatchArray)[2]
     

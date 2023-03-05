@@ -125,6 +125,7 @@ export const dummySlice = createSlice({
       let newData = data.filter((item) => item.nickname === id);
       newData = newData.filter((item) => item.title.includes(title));
       state.current = newData[0];
+      console.log("newData.text", newData[0].text);
     },
     addLike: (
       state,
