@@ -31,7 +31,7 @@ const Detail = () => {
         if(typeof title=='string' && typeof id=='string'){
             dispatch(updateCurrent({ title:changeUrl, id }))
         }
-    },[])
+    },[changeUrl, dispatch, id, title])
 
     return (
         <div className={detailStyle.detail}>

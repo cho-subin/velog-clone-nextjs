@@ -2,7 +2,7 @@ import { StateType } from '@/redux/slice/dummySlice'
 import React from 'react'
 import detailArticleStyle from '../../styles/detail/detailArticle.module.css'
 import { MDEditor } from '../write/writeArticle/mdAditor'
-import MarkdownPreview from '@uiw/react-markdown-preview';
+import * as MarkdownPreview from '@uiw/react-markdown-preview';
 interface IPROPS {
     detailData: StateType
 }
@@ -14,7 +14,7 @@ const detailArticle: React.FC<IPROPS> = ({ detailData }) => {
             <div className={detailArticleStyle.detailArticleWrap}>
                 <div className={detailArticleStyle.detailArticleLists}>
                     <div data-color-mode="light">
-                        <MarkdownPreview
+                        <MarkdownPreview.default
                             style={{ padding: 10 }}
                             source={detailData?.text}
                         />

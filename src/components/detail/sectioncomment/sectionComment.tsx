@@ -32,7 +32,7 @@ const SectionComment: React.FC = () => {
             dispatch(getComments({ id, title: changeUrl }))
         }
         setComment(datas)
-    }, [datas])
+    }, [changeUrl, datas, dispatch, id, title])
 
     let now = new Date(); // 현재 날짜 및 시간
     let year = now.getFullYear();
